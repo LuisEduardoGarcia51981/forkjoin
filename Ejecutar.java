@@ -34,7 +34,7 @@ public class Ejecutar {
 
 
       // Now creating an object of the SearchWork class  
-      PhiForJoinProceso sw = new PhiForJoinProceso(inicio,fin, step);  
+      Pi_ForJoin_Task sw = new Pi_ForJoin_Task(inicio,fin, step);  
       // submitting the task to the ForkJoinPool  
       double results = fjp.invoke(sw);
       System.out.println( "Número total de subprocesos activos después de la invocación: "  + Pool.getActiveThreadCount());    
